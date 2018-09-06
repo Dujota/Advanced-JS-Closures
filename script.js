@@ -65,29 +65,29 @@
 // interviewQuestion('teacher')('Nick')
 
 
-// Closure - function returning a function
+// Closure vs function returning a function
 
-function interviewQuestion(job) {
-  return function (name) {
-    if (job === 'teacher') {
-      console.log('What subject do you teach, ' + name + '?');
-    } else if (job === 'designer'){
-      console.log(name + ', can you please explain what UX design is?');
-    } else{
-      console.log('Hello ' + name + ', what do you do?');
-    }
-  }
-}
+// function interviewQuestion(job) {
+//   return function (name) {
+//     if (job === 'teacher') {
+//       console.log('What subject do you teach, ' + name + '?');
+//     } else if (job === 'designer'){
+//       console.log(name + ', can you please explain what UX design is?');
+//     } else{
+//       console.log('Hello ' + name + ', what do you do?');
+//     }
+//   }
+// }
 
 
-var teacherQuestion = interviewQuestion('teacher')
-var designerQuestion = interviewQuestion('designer')
-var someOtherProf = interviewQuestion('artist')
+// var teacherQuestion = interviewQuestion('teacher')
+// var designerQuestion = interviewQuestion('designer')
+// var someOtherProf = interviewQuestion('artist')
 
-teacherQuestion('Nick')
-designerQuestion('Mary')
-someOtherProf('Lara')
+// teacherQuestion('Nick')
+// designerQuestion('Mary')
+// someOtherProf('Lara')
 
-console.log('----------------------------------------');
-interviewQuestion('teacher')('Nick')
+// console.log('----------------------------------------');
+// interviewQuestion('teacher')('Nick')
 
